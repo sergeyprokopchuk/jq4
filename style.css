@@ -1,0 +1,141 @@
+* {
+    margin:0;
+    padding:0;
+}
+ul {
+	list-style:none;
+}
+.clear {
+    clear:both;
+}
+
+body {
+    background: grey;
+}
+   
+.main-container {
+    width:800px;
+    margin:0 auto;
+}
+
+.logo {
+	float:left;
+}
+.page-title {
+    float: left;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+header, footer, div.content {
+    background:#fff;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    -o-border-radius:10px;
+    -ms-border-radius:10px;
+}
+
+div.content {
+    padding: 3px;
+    text-align: justify;
+}
+.section { 
+    padding: 10px 15px 10px 15px;
+    list-style-type: disc;
+    padding: 0;
+}
+
+footer {
+    text-align:center;
+}
+.pad {
+	padding-left: 35px;
+}
+.marker {
+    padding-left: 40px;
+}
+.content2 {
+float: right;
+    width: 250px;
+    background: grey;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: justify;
+}
+/* Calculator */
+.calc {
+	margin-left: 275px;
+    border: transparent;
+	margin: auto;
+}
+.but {
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    min-height:25px;
+    min-width:35px;
+}
+.calc tr {
+    height: 25px;
+}
+.calc td {
+    display: table-cell;
+    position: relative;
+    width:35px;
+}
+.null {
+}
+.ravno {
+
+    height:52px;
+}
+.text {
+	width: 263px;
+}
+/* navigation */ 
+.navigation {
+	margin: 0 auto; 
+	width: 440px;
+	}
+nav ul > li {
+	width:auto; 
+	margin:5px 15px; 
+	float:left;
+	}
+
+nav ul > li.parent-menu {
+    position:relative;
+    display:inline;
+}
+nav ul > li.parent-menu a {
+    display:block;
+}
+nav ul > li.parent-menu > ul.child-menu {
+    position:absolute;
+    left:-9999px;
+}
+
+nav ul > li.parent-menu:hover > ul.child-menu {
+    left:0; 
+    display:block;
+    background:#fff;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+nav ul > li.parent-menu:hover > ul.child-menu > li {    
+    width: 100%;
+    margin: 0;
+    padding: 1px 10px;
+    box-sizing: border-box;
+}
+nav ul > li.parent-menu:hover > ul.child-menu > li > a {
+    display:block;
+}
+nav ul > li.parent-menu:hover > ul.child-menu > li > a:hover{
+    background:#ccc; color:#fff;
+}

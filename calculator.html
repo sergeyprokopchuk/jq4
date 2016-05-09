@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Заголовок документа</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="jquery-2.2.3.js"></script>
+	</head>
+    <body> 
+        <div id="main-container" class="main-container">
+            <header>
+            <div class="logo">
+                <img src="webLogo.png" alt="Изображение" height="100" /><br />
+            </div>  
+            <div class="page-title">
+                <h1>Основы Web-технологий</h1>
+            </div>
+            <div class="clear"></div>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li class="parent-menu"><a href="web.html">Web-технологии</a>
+                                <ul class="child-menu">
+                                    <li><a href="HTML5.html">HTML</a></li>
+                                    <li><a href="CSS.html">СSS</a></li>
+                                    <li><a href="JS.html">JavaScript</a></li>
+                                </ul>
+                                </li>
+                        <li><a href="calculator.html">Калькулятор</a></li>
+                        <li><a href="test.html">Тест</a></li>
+                    </ul> 
+                <div class="clear"></div>                    
+                </nav>
+            </header>
+            <div class="content">
+				<form>
+					<table border="0" class="calc">
+							<tr>
+								<td colspan="5"><input id="disp" type="text/html" name="text" value="" class="text"></td>
+							</tr>
+							<tr>
+								<td><input id="seven" type="button" name="button" value="7" class="but number" /></td>
+								<td><input id="eight" type="button" name="button" value="8" class="but number" /></td>
+								<td><input id="nine" type="button" name="button" value="9" class="but number"/></td>								
+								<td><input id="divide" type="button" name="button" value="/" class="but operator"/></td>
+								<td><input id="butclear" type="button" name="button" value="C" class="but"/></td>
+							</tr>
+							<tr>
+								<td><input id="four" type="button" name="button" value="4" class="but number"/></td>								
+								<td><input id="five" type="button" name="button" value="5" class="but number"/></td>
+								<td><input id="six" type="button" name="button" value="6" class="but number"/></td>
+								<td><input id="multiply" type="button" name="button" value="*" class="but operator"/></td>
+								<td><input id="butneg" type="button" name="button" value="&#177;" class="but"/></td>
+							</tr>
+							<tr>
+								<td><input id="one" type="button" name="button" value="1" class="but number"/></td>
+								<td><input id="two" type="button" name="button" value="2" class="but number"/></td>
+								<td><input id="three" type="button" name="button" value="3" class="but number"/></td>
+								<td><input id="minus" type="button" name="button" value="-" class="but operator"/></td>
+								<td rowspan="2"><input id="butequals" type="button" name="button" value="=" class="but ravno"/><br /></td>
+							</tr>
+							<tr>
+								<td colspan="2"><input id="zero" type="button" name="button" value="0"class="but null zero number"/></td>
+								<td><input id="dot" type="button" name="button" value="." class="but"/></td>
+								<td><input id="plus" type="button" name="button" value="+" class="but operator"/></td>
+							</tr>
+					</table>
+				</form>
+			</div>
+        <footer>
+            <address>
+                <a href="mailto:mail@mail">Пишите: mail@mail</a>
+            </address>
+				&#169;Фамилия И.О..год
+        </footer>
+        <script src="calcJQ.js"></script>
+    </body>
+</html>
